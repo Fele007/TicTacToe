@@ -47,7 +47,7 @@ public class Game implements Runnable {
 	      winningPlayer = playerX;
 	      losingPlayer = playerO;
 	      if (winningPlayer instanceof EvolvingPlayer) {
-	        ((EvolvingPlayer) winningPlayer).reward(this);
+	        ((EvolvingPlayer) winningPlayer).reward(this, 5.0);
 	      }
 	      if (losingPlayer instanceof EvolvingPlayer) {
 	        ((EvolvingPlayer) losingPlayer).punish(this);
@@ -58,7 +58,7 @@ public class Game implements Runnable {
 	      winningPlayer = playerO;
 	      losingPlayer = playerX;
 	      if (winningPlayer instanceof EvolvingPlayer) {
-	        ((EvolvingPlayer) winningPlayer).reward(this);
+	        ((EvolvingPlayer) winningPlayer).reward(this, 5.0);
 	      }
 	      if (losingPlayer instanceof EvolvingPlayer) {
 	        ((EvolvingPlayer) losingPlayer).punish(this);

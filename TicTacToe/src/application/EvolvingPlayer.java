@@ -19,14 +19,14 @@ public class EvolvingPlayer extends Player {
 	      decision = brain.think (game);
 	      row = decision[0];
 	      column = decision[1];
-	      counter++;
+	      //counter++;
 	    }
 	    //System.out.println(counter);
-	    reward(game);
+	    reward(game, 1.0);
 	  }
 
-	  public void reward(Game game) {
-	    brain.reward(game);
+	  public void reward(Game game, double score) {
+	    brain.reward(game, score);
 	  }
 
 

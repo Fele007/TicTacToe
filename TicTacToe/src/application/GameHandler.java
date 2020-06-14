@@ -33,7 +33,7 @@ public class GameHandler implements Runnable {
 	            }
 	          }
 	          catch (NullPointerException e) {
-	            System.out.println("Null-Pointer");
+	            System.out.println("It's a tie");
 	          }
 	          catch (ArrayIndexOutOfBoundsException e) {
 	            System.out.println("Let the Computer win first!");
